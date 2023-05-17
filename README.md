@@ -24,3 +24,22 @@
 ## 실습 내용
 
 1. 실습내용
+
+## 프로젝트 생성
+
+1. yarn create react-app my-app
+2. cd my-app
+3. .gitignore
+
+```
+# yarn install
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+```
+
+4. yarn start
