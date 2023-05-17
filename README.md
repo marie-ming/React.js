@@ -32,14 +32,17 @@
 3. .gitignore
 
 ```
-# yarn install
-.pnp.*
 .yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+
 ```
 
-4. yarn start
+4. create .yarnrc.yml
+
+```
+packageExtensions:
+  react-scripts@*:
+    peerDependencies:
+      eslint-config-react-app: '*'
+```
+
+5. yarn start
