@@ -51,8 +51,8 @@ packageExtensions:
 ## 프로젝트 다운 받아 시작할 때
 
 1. yarn -v 
-  1.1 버전이 1.x 이면 : yarn set version stable (node.js 폴더에서) [https://yarnpkg.com/getting-started/install](참고)
-  1.2 버전이 3.x 이면 : OK
+1.1 버전이 1.x 이면 : yarn set version stable (node.js 폴더에서) [참고](https://yarnpkg.com/getting-started/install)
+1.2 버전이 3.x 이면 : OK
 2. cd 원하는폴더
 2. yarn install 
 
