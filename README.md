@@ -1,4 +1,4 @@
-# 드림코딩 React 강의 (2023-05-17 update)
+# 드림코딩 React 강의 (2023-05-19 update)
 
 이 저장소는 드림코딩 리액트 강의를 들으면서 학습한 내용을 정리하고 실습 내용을 기록하기 위한 공간입니다.
 
@@ -23,7 +23,7 @@
 
 ## 실습 내용
 
-1. 실습내용
+1. ToDo (todo branch)
 
 ## 프로젝트 생성
 
@@ -46,3 +46,13 @@ packageExtensions:
 ```
 
 5. yarn start
+
+
+## 프로젝트 다운 받아 시작할 때
+
+1. yarn -v 
+  1.1 버전이 1.x 이면 : yarn set version stable (node.js 폴더에서) [https://yarnpkg.com/getting-started/install](참고)
+  1.2 버전이 3.x 이면 : OK
+2. cd 원하는폴더
+2. yarn install 
+
