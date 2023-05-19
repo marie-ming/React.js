@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TodoAdd from '../TodoAdd/TodoAdd';
 import Todo from '../Todo/Todo';
 
-const TodoList = () => {
+const TodoList = ({ cate }) => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -22,10 +22,12 @@ const TodoList = () => {
     setList(list.filter((item) => item.id !== todo.id));
   };
 
+  const filtered = getFilteredList(list, cate);
+
   return (
     <section>
       <ul>
-        {list.map((item) => (
+        {filtered.map((item) => (
           <Todo
             key={item.id}
             todo={item}
@@ -41,8 +43,12 @@ const TodoList = () => {
 
 export default TodoList;
 
-const list = [
-  { id: '1', name: '청소하기', status: 'active' },
-  { id: '2', name: '드림코딩 강의 듣기', status: 'active' },
-  { id: '3', name: '데일리스크럼', status: 'active' },
-];
+function getFilteredList(list, cate) {
+  if (cate === 'all') return list;
+
+  const filter = list.filter((item) =>
+    cate === 'completed' ? item.status : !item.status
+  );
+
+  return filter;
+}
