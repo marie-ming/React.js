@@ -7,6 +7,13 @@
   --color-white: #ffffff;
 }
 
+html.dark {
+  --color-bg-yellow: #282c34;
+  --color-bg: #303846;
+  --color-grey: #636e80;
+  --color-text: #e6edf2;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
