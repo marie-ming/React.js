@@ -4,16 +4,7 @@ import Todo from '../Todo/Todo';
 import styles from './TodoList.module.css';
 
 const TodoList = ({ cate }) => {
-  const [list, setList] = useState([]);
-
-  useEffect(() => {
-    fetch(`data/todo.json`)
-      .then((res) => res.json())
-      .then((data) => {
-        setList(data);
-      })
-      .catch((e) => console.log(e));
-  }, []);
+  const [list, setList] = useState(readTodosFromLS);
 
   const handleAdd = (todo) => setList([...list, todo]);
   const handleUpdate = (todo) => {
@@ -22,6 +13,10 @@ const TodoList = ({ cate }) => {
   const handleDelete = (todo) => {
     setList(list.filter((item) => item.id !== todo.id));
   };
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(list));
+  }, [list]);
 
   const filtered = getFilteredList(list, cate);
 
@@ -43,6 +38,11 @@ const TodoList = ({ cate }) => {
 };
 
 export default TodoList;
+
+function readTodosFromLS() {
+  const todos = localStorage.getItem('todos');
+  return todos ? JSON.parse(todos) : [];
+}
 
 function getFilteredList(list, cate) {
   if (cate === 'all') return list;
