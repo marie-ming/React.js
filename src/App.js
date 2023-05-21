@@ -7,12 +7,10 @@ function App() {
   const [cate, setCate] = useState(category[0]);
 
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <Header category={category} cate={cate} setCate={setCate} />
-        <TodoList cate={cate} />
-      </header>
-    </div>
+    <>
+      <Header category={category} cate={cate} setCate={setCate} />
+      <TodoList cate={cate} />
+    </>
   );
 }
 
