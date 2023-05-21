@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  accent-color: var(--color-accent);
   background: rgb(198, 255, 229);
   background: linear-gradient(
     216deg,
@@ -60,4 +61,14 @@ ul {
 button {
   outline: none;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 41px solid var(--color-accent);
+  border-radius: 50px;
 }

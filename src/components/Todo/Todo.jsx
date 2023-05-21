@@ -1,23 +1,27 @@
 import React from 'react';
 import { HiOutlineTrash } from 'react-icons/hi';
+import styles from './Todo.module.css';
 
 const Todo = ({ todo, onUpdate, onDelete }) => {
   const { text, status } = todo;
 
   return (
-    <li>
-      <form>
-        <input
-          type='checkbox'
-          id='checkbox'
-          checked={status}
-          onChange={(e) => onUpdate({ ...todo, status: e.target.checked })}
-        />
+    <li className={styles.todo}>
+      <input
+        className={styles.checkbox}
+        type='checkbox'
+        id='checkbox'
+        checked={status}
+        onChange={(e) => onUpdate({ ...todo, status: e.target.checked })}
+      />
+      <label htmlFor='checkbox' className={styles.text}>
         {text}
-        <button onClick={() => onDelete(todo)}>
+      </label>
+      <span className={styles.icon}>
+        <button className={styles.button} onClick={() => onDelete(todo)}>
           <HiOutlineTrash />
         </button>
-      </form>
+      </span>
     </li>
   );
 };
