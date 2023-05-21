@@ -1,9 +1,10 @@
 :root {
-  --color-bg-dark: #282c34;
+  --color-bg-yellow: #ffffe4;
   --color-bg: #fdfffd;
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #f16e03;
+  --color-white: #ffffff;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
   background: rgb(198, 255, 229);
   background: linear-gradient(
     216deg,
@@ -30,6 +32,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #root {
