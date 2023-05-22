@@ -1,4 +1,4 @@
-# 드림코딩 React 강의 (2023-05-22 update)
+# 드림코딩 React 강의 (2023-05-23 update)
 
 이 저장소는 드림코딩 리액트 강의를 들으면서 학습한 내용을 정리하고 실습 내용을 기록하기 위한 공간입니다.
 
@@ -20,6 +20,7 @@
 - 로딩,에러 상태 추가
 - 커스텀 훅
 - 클래스 컴포넌트
+- 리액트 라우터
 
 ## 실습 내용
 
@@ -40,12 +41,11 @@
 
 5. yarn start
 
+## 프로젝트 실행 및 시작
 
-## 프로젝트 다운 받아 시작할 때
-
-1. yarn -v 
-<br/>1.1 버전이 1.x 이면 : yarn set version stable (node.js 폴더에서) [참고](https://yarnpkg.com/getting-started/install)
-<br/>1.2 버전이 3.x 이면 : OK
+1. yarn -v
+   <br/>1.1 버전이 1.x 이면 : yarn set version stable (node.js 폴더에서) [참고](https://yarnpkg.com/getting-started/install)
+   <br/>1.2 버전이 3.x 이면 : OK
 2. cd 원하는폴더
-2. yarn install 
-
+3. yarn install
+4. yarn start
