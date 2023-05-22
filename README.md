@@ -1,4 +1,4 @@
-# 드림코딩 React 강의 (2023-05-19 update)
+# 드림코딩 React 강의 (2023-05-22 update)
 
 이 저장소는 드림코딩 리액트 강의를 들으면서 학습한 내용을 정리하고 실습 내용을 기록하기 위한 공간입니다.
 
@@ -36,14 +36,7 @@
 
 ```
 
-4. create .yarnrc.yml
-
-```
-packageExtensions:
-  react-scripts@*:
-    peerDependencies:
-      eslint-config-react-app: '*'
-```
+4. yarn add eslint eslint-config-react-app --dev
 
 5. yarn start
 
